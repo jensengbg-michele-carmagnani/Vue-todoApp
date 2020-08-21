@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue Todo App</title>
+  </head>
+  <body>
+    <main id="app">
+      <ul>
+        <todo-item
+          v-for="(todo, index) in todos"
+          v-bind:key="index"
+          v-bind:todo="todo"
+          
+        ></todo-item>
+      </ul>
+      <footer>
+        <new-todo></new-todo>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  background: #eee;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+main ul {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  background: rgb(255, 255, 255);
+}
+
+main ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 0 2rem 0;
+  background: rgb(192, 192, 192);
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+main ul li input[type="checkbox"] {
+  margin: 0.5rem;
+  width: 1rem;
+}
+
+main ul li span {
+}
+main ul li.done {
+  opacity: 0.5;
+}
+
+main input {
+  padding: 0.3rem;
+  border: none;
+  background: #666;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+main button {
+  appearance: none;
+  font-size: 1.2rem;
+  background: #222;
+  color: white;
+  padding: 1.2rem;
+}
